@@ -1,4 +1,4 @@
-# Write a function that return whether or not the input string has balanced parantheses
+# Write a function that return whether or not the input string has balanced parentheses
 # Balanced:
 #   '((()))'
 #   '(()())'
@@ -8,26 +8,25 @@
 
 # use input for a string
 
-
-
 from pythonds.basic.stack import Stack
+
 
 def parChecker(symbolString):
     s = Stack() # stack method applied
     balanced = True # bool value true if par is balanced
     index = 0
-    while index < len(symbolString) and balanced:
-        symbol = symbolString[index]
-        if symbol == "(":
-            s.push(symbol)
+    while index < len(symbolString) and balanced: # loops through the symbolString
+        symbol = symbolString[index] # assign a symbol var to the symbolString index
+        if symbol == "(":    # condition set
+            s.push(symbol) # push the  symbol on the stack
         else:
-            if s.isEmpty():
-                balanced = False
+            if s.isEmpty(): # when stack is empty
+                balanced = False # no balance
             else:
-                s.pop()
+                s.pop() #  else remove the the symbol from the stack
 
 
-        index = index + 1
+        index = index + 1 # start up  indexing of the symbolString
 
 
     if balanced and s.isEmpty():
