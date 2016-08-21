@@ -14,4 +14,4 @@ def divide_by_2(num):
         bin_string = bin_string + str(rem_stack.pop()) # pop the remainder from my stack
     return bin_string # get my binary string
 
-print divide_by_2(457)
+print divide_by_2(20)
