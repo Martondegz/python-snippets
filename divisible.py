@@ -12,7 +12,7 @@ def fun():
         # print x
         # put an if condition on x
         if x % 7 == 0 and x % 5 != 0:
-            print x
+            print x,
 
 
 
