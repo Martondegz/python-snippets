@@ -4,9 +4,14 @@ Suppose the following input is supplied to the program:
 8
 Then, the output should be:
 40320"""
+
 def factorial(n):
      if n == 0:
         return 1
      else:
         return n * factorial(n-1)
-print factorial( n = int(raw_input("factor me")))
+
+
+
+
+print factorial(6)
