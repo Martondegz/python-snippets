@@ -35,7 +35,7 @@ def list_array(a, b):
 
  
 
-print list_array(a = raw_input, b = raw_input)	
+print list_array()	
 
 
 
