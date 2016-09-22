@@ -1,4 +1,4 @@
-"""
+c"""
 You are presented with a string or a collection of strings
 Your function should return the length of the string, or strings in a list
 ['Fairy', 'tale'] should return [5, 4]
